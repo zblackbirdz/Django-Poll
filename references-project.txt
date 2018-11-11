@@ -1,0 +1,17 @@
+Tutorial about creating a Poll in Django:
+https://docs.djangoproject.com/en/2.0/intro/tutorial01/
+
+Where the files are in GitHub:
+https://github.com/zblackbirdz/Django-Poll
+
+Who is hosting the site:
+n/a
+
+URL of the site:
+n/a
+
+Colour picker:
+https://htmlcolorcodes.com/color-picker/
+
+Fonts:
+https://fonts.google.com

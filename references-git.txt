@@ -1,0 +1,19 @@
+# first time ... (assuming you've created a github repository)
+echo "# Django-Poll" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/zblackbirdz/#######.git    (where ####### is the name of the repository)
+git push -u origin master
+
+# status of the local files 
+git status
+
+# add files ..
+git status --all
+
+# commit ...
+git commit -m "Comment"
+
+# push ...
+git push
