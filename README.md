@@ -1,6 +1,6 @@
-# DjangoBlog
+# Django Poll
 
-Following Django Girls' tutorial about creating a blog using Django:
-https://tutorial.djangogirls.org/en/django_start_project/
+Following Django's Tutorial about creating a Poll:
+https://docs.djangoproject.com/en/2.0/intro/tutorial01/
 
 Note: Do not use this code in production - it is not secure."# Django-Poll" 
