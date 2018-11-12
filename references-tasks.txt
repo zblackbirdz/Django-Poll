@@ -1,0 +1,63 @@
+Create the project files (Note the ".")
+    django-admin startproject mysite . 
+
+Launch the site (to check that it is running)
+    python manage.py runserver
+
+Create the files for the _app_ Polls
+    python manage.py startapp polls
+
+... 
+
+Edit the mysite / settings.py
+    - language  (en-ie)
+    - timezone  (Europe/Dublin)
+
+Migrate the settings ..
+    python manage.py migrate
+
+Create models ..
+    edit _app_/models.py
+        from django.db import models
+        class Table1(models.Model):
+            field1 = models.CharField(...)
+            field2 = models.DateTimeField( "date published")
+            ...
+
+        class Table2(models.Model):
+            field3 = models.ForignKey(field1, on_delete=models.CASCADE)
+            field4 = models.CharField(...)
+            field5 = models.IntegerField(default=0)
+            ...
+
+Activating models ..
+    - uses the _app_/models.py
+    - edit the mysite/settings.py
+        - update "INSTALLED_APPS" - append "_app_.apps._App_Config",
+    python manage.py makemigrations _app_
+
+    to see what SQL code is generated
+        python manage.py sqlmigrate _app_ 0001
+
+    if you're happy with the models
+        python manage.py migrate
+    
+If you change the models:
+    python manage.py makemigrations
+    python manage.py migrate
+
+Admin section of the _app_
+    - create an admin/superuser account
+        python manage.py createsuperuser
+        - enter Username, Email, Password (x2)
+    - start server
+        python manage.py runserver
+    - visit site 
+        http://127.0.0.1:8000/admin/
+
+Add the _app_ to the admin section (site)
+    edit _app_/admin.py
+        from .models import (relevant className from models.py)
+        admin.site.register(relevant className from models.py)
+
+
