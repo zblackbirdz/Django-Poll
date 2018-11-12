@@ -1,4 +1,6 @@
 batch-files/
+db.sqlite3
+*.bat
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
