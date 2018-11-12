@@ -1,6 +1,13 @@
 batch-files/
 db.sqlite3
 *.bat
+*.pyc
+*~
+__pycache__
+myvenv
+.DS_Store
+/.vscode
+
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
