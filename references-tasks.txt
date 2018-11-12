@@ -60,4 +60,11 @@ Add the _app_ to the admin section (site)
         from .models import (relevant className from models.py)
         admin.site.register(relevant className from models.py)
 
+Updated the .gitignore file?
+    - changes are not forcing git to ignore them ...
+    - so to fix this:
+        git rm -r --cached .
+        git add .
+        git commit -m "fixed untracked files"
+        git push
 

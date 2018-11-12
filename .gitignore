@@ -1,3 +1,11 @@
+# Did you update this file?
+#    - changes are not forcing git to ignore them ...
+#    - so to fix this:
+#        git rm -r --cached .
+#        git add .
+#        git commit -m "fixed untracked files"
+#        git push
+
 batch-files/
 db.sqlite3
 *.bat
